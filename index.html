@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Front-End</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">S</div>
+          <div>
+            <h2>SystemX</h2>
+            <p>Admin Panel</p>
+          </div>
+        </div>
+
+        <nav class="nav-links">
+          <a class="active" href="#">Dashboard</a>
+          <a href="#">Users</a>
+          <a href="#">Reports</a>
+          <a href="#">Settings</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <h3>Quick Status</h3>
+          <p>All systems are running smoothly.</p>
+          <button>View Details</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Overview</p>
+            <h1>Welcome back</h1>
+          </div>
+          <div class="topbar-actions">
+            <button id="themeToggle">Toggle Theme</button>
+            <div class="avatar">AD</div>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="card">
+            <p>Total Users</p>
+            <h3>24,580</h3>
+            <span class="positive">+12.4%</span>
+          </article>
+          <article class="card">
+            <p>Orders</p>
+            <h3>1,248</h3>
+            <span class="positive">+8.1%</span>
+          </article>
+          <article class="card">
+            <p>Revenue</p>
+            <h3>$84,320</h3>
+            <span class="positive">+15.2%</span>
+          </article>
+          <article class="card">
+            <p>Alerts</p>
+            <h3>7</h3>
+            <span class="warning">Needs review</span>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel">
+            <div class="panel-header">
+              <h3>Weekly Activity</h3>
+              <span id="currentTime">--</span>
+            </div>
+            <div class="bars">
+              <div class="bar" style="height: 45%"></div>
+              <div class="bar" style="height: 72%"></div>
+              <div class="bar" style="height: 60%"></div>
+              <div class="bar" style="height: 82%"></div>
+              <div class="bar" style="height: 68%"></div>
+              <div class="bar" style="height: 90%"></div>
+              <div class="bar" style="height: 76%"></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h3>Recent Actions</h3>
+              <a href="#">See all</a>
+            </div>
+            <ul class="activity-list">
+              <li><strong>New user</strong> registered 2 mins ago</li>
+              <li><strong>Payment</strong> approved for invoice #1042</li>
+              <li><strong>Report</strong> exported successfully</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
